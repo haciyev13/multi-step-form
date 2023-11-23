@@ -1,126 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Multi-step form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>| Multi-step form |</title>
+  </head>
+  <body>
+    <section class="section__form">
+      <div class="container">
+        <div class="section__form-content">
+          <div class="section__form-img">
+            <div class="section__form-img-card section__form-img-card-1">
+              <div
+                class="section__form-img-card-circle section__form-img-card-circle-1"
+              >
+                1
+              </div>
+              <div class="section__form-img-card-info">
+                <p>Step 1</p>
+                <h6>YOUR INFO</h6>
+              </div>
+            </div>
+            <div class="section__form-img-card section__form-img-card-2">
+              <div
+                class="section__form-img-card-circle section__form-img-card-circle-2"
+              >
+                2
+              </div>
+              <div class="section__form-img-card-info">
+                <p>Step 2</p>
+                <h6>Select plan</h6>
+              </div>
+            </div>
+            <div class="section__form-img-card section__form-img-card-3">
+              <div
+                class="section__form-img-card-circle section__form-img-card-circle-3"
+              >
+                3
+              </div>
+              <div class="section__form-img-card-info">
+                <p>Step 3</p>
+                <h6>Add-ons</h6>
+              </div>
+            </div>
+            <div class="section__form-img-card section__form-img-card-4">
+              <div
+                class="section__form-img-card-circle section__form-img-card-circle-4"
+              >
+                4
+              </div>
+              <div class="section__form-img-card-info">
+                <p>Step 4</p>
+                <h6>summary</h6>
+              </div>
+            </div>
+          </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <div class="section__form-info section__form-info-1">
+            <h2>Personal info</h2>
+            <p>Please provide your name, email address, and phone number.</p>
+            <form action="">
+              <label for="">
+                Name
+                <input type="text" placeholder="Venessa Mint" required />
+              </label>
+              <label for="">
+                Email Address
+                <input type="email" placeholder="Venessa@gmail.com" required />
+                <p>This fieldis required</p>
+              </label>
+              <label for="">
+                Phone Number
+                <input
+                  type="phone"
+                  placeholder="e.g +994 77 000 00 00"
+                  required
+                />
+              </label>
+              <div class="section__form-btn">
+                <a href="#"> Next Step </a>
+              </div>
+            </form>
+          </div>
 
-  <!-- Sidebar start -->
+          <div
+            class="section__form-info section__form-info-2 padding-top d-none"
+          >
+            <h2>Select your plan</h2>
+            <p class="padding">
+              You have the option of monthly or yearly billing.
+            </p>
 
-  Step 1
-  Your info
+            <div class="section__form-card">
+              <div class="section__form-card-item">
+                <div class="section__form-item-img">
+                  <img src="./assets/images/icon-arcade.svg" alt="" />
+                </div>
+                <div class="section__form-item-info">
+                  <p>Arcade</p>
+                  <p>$9/mo</p>
+                </div>
+              </div>
 
-  Step 2
-  Select plan
+              <div class="section__form-card-item">
+                <div class="section__form-item-img">
+                  <img src="./assets/images/icon-advanced.svg" alt="" />
+                </div>
+                <div class="section__form-item-info">
+                  <p>Arcade</p>
+                  <p>$9/mo</p>
+                </div>
+              </div>
 
-  Step 3
-  Add-ons
+              <div class="section__form-card-item">
+                <div class="section__form-item-img">
+                  <img src="./assets/images/icon-pro.svg" alt="" />
+                </div>
+                <div class="section__form-item-info">
+                  <p>Arcade</p>
+                  <p>$9/mo</p>
+                </div>
+              </div>
+            </div>
 
-  Step 4
-  Summary
+            <div class="section__form-icon">
+              <p>Monthly</p>
+              <p><img src="./assets/images/Group 2.png" alt="" /></p>
+              <p>Yearly</p>
+            </div>
+            <div class="section__form-btn">
+              <a href="#">Go Back</a>
+              <a href="#"> Next Step </a>
+            </div>
+          </div>
 
-  <!-- Sidebar end -->
+          <div class="section__form-info section__form-info-3 pick d-none">
+            <h2>Pick add-ons</h2>
+            <p class="padding">Add-ons help enhance your gaming experience.</p>
 
-  <!-- Step 1 start -->
+            <div class="section__checkbox">
+              <div class="checkbox-input">
+                <input type="checkbox" />
+              </div>
+              <div class="checkbox-info">
+                <p>Online service</p>
+                <p>Access to multiplayer games</p>
+              </div>
+              <div class="checkbox-price">
+                <p>+$1/mo</p>
+              </div>
+            </div>
 
-  Personal info
-  Please provide your name, email address, and phone number.
+            <div class="section__checkbox">
+              <div class="checkbox-input">
+                <input type="checkbox" />
+              </div>
+              <div class="checkbox-info">
+                <p>Larger storage</p>
+                <p>Access to multiplayer games</p>
+              </div>
+              <div class="checkbox-price">
+                <p>+$1/mo</p>
+              </div>
+            </div>
 
-  Name
-  e.g. Stephen King
+            <div class="section__checkbox">
+              <div class="checkbox-input">
+                <input type="checkbox" />
+              </div>
+              <div class="checkbox-info">
+                <p>Customizable Profile</p>
+                <p>Access to multiplayer games</p>
+              </div>
+              <div class="checkbox-price">
+                <p>+$1/mo</p>
+              </div>
+            </div>
 
-  Email Address
-  e.g. stephenking@lorem.com
+            <div class="section__checkbox-btn">
+              <a href="#">Go Back</a>
+              <a href="#"> Next Step </a>
+            </div>
+          </div>
 
-  Phone Number
-  e.g. +1 234 567 890
+          <div class="section__form-info section__form-info-4 pick last d-none">
+            <h2>Finishing up</h2>
+            <p class="padding">
+              Double-check everything looks OK before confirming.
+            </p>
 
-  Next Step
+            <div class="arcade">
+              <div class="arcade__montly">
+                <p>Arcade(Monthly)</p>
+                <p><a href="#">Change</a></p>
+                <p>$9/mo</p>
+              </div>
+              <hr />
+              <div class="service">
+                <div class="service-top">
+                  <p>Online service</p>
+                  <p>+$1/mo</p>
+                </div>
+                <div class="service-bottom">
+                  <p>Larger storage</p>
+                  <p>+$1/mo</p>
+                </div>
+              </div>
 
-  <!-- Step 1 end -->
+              <div class="total">
+                <p>Total (per month)</p>
+                <p>+$12/mo</p>
+              </div>
+            </div>
 
-  <!-- Step 2 start -->
+            <div class="section__total-btn">
+              <a href="#">Go Back</a>
+              <a href="#"> Confirm </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Select your plan
-  You have the option of monthly or yearly billing.
-
-  Arcade
-  $9/mo
-
-  Advanced
-  $12/mo
-
-  Pro
-  $15/mo
-
-  Monthly
-  Yearly
-
-  Go Back
-  Next Step
-
-  <!-- Step 2 end -->
-
-  <!-- Step 3 start -->
-
-  Pick add-ons
-  Add-ons help enhance your gaming experience.
-
-  Online service
-  Access to multiplayer games
-  +$1/mo
-
-  Larger storage
-  Extra 1TB of cloud save
-  +$2/mo
-
-  Customizable Profile
-  Custom theme on your profile
-  +$2/mo
-
-  Go Back
-  Next Step
-
-  <!-- Step 3 end -->
-
-  <!-- Step 4 start -->
-
-  Finishing up
-  Double-check everything looks OK before confirming.
-
-  <!-- Dynamically add subscription and add-on selections here -->
-
-  Total (per month/year)
-
-  Go Back
-  Confirm
-
-  <!-- Step 4 end -->
-
-  <!-- Step 5 start -->
-
-  Thank you!
-
-  Thanks for confirming your subscription! We hope you have fun 
-  using our platform. If you ever need support, please feel free 
-  to email us at support@loremgaming.com.
-
-  <!-- Step 5 end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
