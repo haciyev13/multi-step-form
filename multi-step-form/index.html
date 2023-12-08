@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- displays site properly based on user's device -->
+
+     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+     <link rel="stylesheet" href="./assets/css/style.css" />
+     <title>| Multi-step form |</title>
+</head>
+
+<body>
+     <section class="section__form">
+          <div class="container">
+               <div class="section__form-content">
+                    <div class="section__form-img">
+                         <div class="section__form-img-card section__form-img-card-1">
+                              <div class="section__form-img-card-circle click section__form-img-card-circle-1">
+                                   1
+                              </div>
+                              <div class="section__form-img-card-info">
+                                   <p>Step 1</p>
+                                   <h6>YOUR INFO</h6>
+                              </div>
+                         </div>
+                         <div class="section__form-img-card section__form-img-card-2">
+                              <div class="section__form-img-card-circle section__form-img-card-circle-2">
+                                   2
+                              </div>
+                              <div class="section__form-img-card-info">
+                                   <p>Step 2</p>
+                                   <h6>Select plan</h6>
+                              </div>
+                         </div>
+                         <div class="section__form-img-card section__form-img-card-3">
+                              <div class="section__form-img-card-circle section__form-img-card-circle-3">
+                                   3
+                              </div>
+                              <div class="section__form-img-card-info">
+                                   <p>Step 3</p>
+                                   <h6>Add-ons</h6>
+                              </div>
+                         </div>
+                         <div class="section__form-img-card section__form-img-card-4">
+                              <div class="section__form-img-card-circle section__form-img-card-circle-4">
+                                   4
+                              </div>
+                              <div class="section__form-img-card-info">
+                                   <p>Step 4</p>
+                                   <h6>summary</h6>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="section__form-info section__form-info-1">
+                         <h2>Personal info</h2>
+                         <p>Please provide your name, email address, and phone number.</p>
+                         <form action="#">
+                              <label class="name-label" for="">
+                                   Name
+                                   <input class="name" type="text" placeholder="Venessa Mint" value="Venessa Mint" />
+                                   <p class="error-message"></p>
+                              </label>
+                              <label for="" class="email-label">
+                                   Email Address
+                                   <input value="Venessa@gmail.com" class="email" type="email"
+                                        placeholder="Venessa@gmail.com" />
+                                   <p class="error-message"></p>
+                              </label>
+                              <label for="" class="phone-label">
+                                   Phone Number
+                                   <input value="0770000000" class="phone" type="number"
+                                        placeholder="e.g +994 77 000 00 00" />
+                                   <p class="error-message"></p>
+                              </label>
+                              <div class="section__form-btn">
+                                   <button>Next Step</button>
+                              </div>
+                         </form>
+                    </div>
+
+                    <div class="section__form-info section__form-info-2 padding-top d-none">
+                         <h2>Select your plan</h2>
+                         <p class="padding">
+                              You have the option of monthly or yearly billing.
+                         </p>
+
+                         <div class="section__form-card">
+                              <div class="section__form-card-item selected">
+                                   <div class="section__form-item-img">
+                                        <img src="./assets/images/icon-arcade.svg" alt="" />
+                                   </div>
+                                   <div class="section__form-item-info">
+                                        <p>Arcade</p>
+                                        <p class="plan-price">$9/mo</p>
+                                   </div>
+                              </div>
+
+                              <div class="section__form-card-item">
+                                   <div class="section__form-item-img">
+                                        <img src="./assets/images/icon-advanced.svg" alt="" />
+                                   </div>
+                                   <div class="section__form-item-info">
+                                        <p>Advanced</p>
+                                        <p class="plan-price">$12/mo</p>
+                                   </div>
+                              </div>
+
+                              <div class="section__form-card-item">
+                                   <div class="section__form-item-img">
+                                        <img src="./assets/images/icon-pro.svg" alt="" />
+                                   </div>
+                                   <div class="section__form-item-info">
+                                        <p>Pro</p>
+                                        <p class="plan-price">$15/mo</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="section__form-icon">
+                              <p class="plan-monthly">Monthly</p>
+                              <label class="switch">
+                                   <input type="checkbox" />
+                                   <span class="slider round"></span>
+                              </label>
+                              <p class="plan-yearly">Yearly</p>
+                         </div>
+                         <div class="section__form-btn">
+                              <a href="#" class="backBtn-2">Go Back</a>
+                              <a href="#" class="nextBtn-2"> Next Step </a>
+                         </div>
+                    </div>
+
+                    <div class="section__form-info section__form-info-3 pick d-none">
+                         <h2>Pick add-ons</h2>
+                         <p class="padding">Add-ons help enhance your gaming experience.</p>
+
+                         <div class="section__checkbox">
+                              <div class="checkbox-input">
+                                   <input type="checkbox" />
+                              </div>
+                              <div class="checkbox-info">
+                                   <p>Online service</p>
+                                   <p>Access to multiplayer games</p>
+                              </div>
+                              <div class="checkbox-price">
+                                   <p>+$1/mo</p>
+                              </div>
+                         </div>
+
+                         <div class="section__checkbox">
+                              <div class="checkbox-input">
+                                   <input type="checkbox" />
+                              </div>
+                              <div class="checkbox-info">
+                                   <p>Larger storage</p>
+                                   <p>Access to multiplayer games</p>
+                              </div>
+                              <div class="checkbox-price">
+                                   <p>+$3/mo</p>
+                              </div>
+                         </div>
+
+                         <div class="section__checkbox">
+                              <div class="checkbox-input">
+                                   <input type="checkbox" />
+                              </div>
+                              <div class="checkbox-info">
+                                   <p>Customizable Profile</p>
+                                   <p>Access to multiplayer games</p>
+                              </div>
+                              <div class="checkbox-price">
+                                   <p>+$5/mo</p>
+                              </div>
+                         </div>
+
+                         <div class="section__checkbox-btn">
+                              <a href="#" class="backBtn-3">Go Back</a>
+                              <a href="#" class="nextBtn-3"> Next Step </a>
+                         </div>
+                    </div>
+
+                    <div class="section__form-info section__form-info-4 pick last d-none">
+                         <h2>Finishing up</h2>
+                         <p class="padding">
+                              Double-check everything looks OK before confirming.
+                         </p>
+                         <div class="arcade">
+                              <div class="arcade__montly">
+                                   <p class="title">Arcade(Monthly)</p>
+                                   <p><a href="#">Change</a></p>
+                                   <p class="price">$9/mo</p>
+                              </div>
+                              <hr />
+                              <div class="service">
+                                   <!-- <div class="service-top">
+                  <p class="service-top-1">Online service</p>
+                  <p class="service-top-2">+$1/mo</p>
+                </div> -->
+
+                                   <!-- <div class="service-bottom">
+                  <p>Larger storage</p>
+                  <p>+$1/mo</p>
+                </div> -->
+                              </div>
+
+                              <div class="total">
+                                   <p>Total (per month)</p>
+                                   <p>+$12/mo</p>
+                              </div>
+                         </div>
+
+                         <div class="section__total-btn">
+                              <a href="#" class="backBtn-4">Go Back</a>
+                              <a href="#" class="nextBtn-4"> Submit </a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
