@@ -1,499 +1,586 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
-    background-color: var(--bg-color-light-blue);
+  background-color: var(--bg-color-light-blue);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 :root {
-    --bg-color-marine-blue: hsl(213, 96%, 18%);
-    --bg-color-purplish-blue: hsl(243, 100%, 62%);
-    --bg-color-paste-blue: hsl(228, 100%, 84%);
-    --bg-color-light-blue: hsl(206, 94%, 87%);
-    --bg-color-strawberry-red: hsl(206, 94%, 87%);
-    --color-gary: hsl(231, 11%, 63%);
-    --color-light-gary: hsl(229, 24%, 87%);
-    --color-magnolia: hsl(217, 100%, 97%);
-    --color-alabaster: hsl(231, 100%, 99%);
-    --color-white: hsl(0, 0%, 100%);
-    --color-red: hsl(0, 92%, 40%);
+  --bg-color-marine-blue: hsl(213, 96%, 18%);
+  --bg-color-purplish-blue: hsl(243, 100%, 62%);
+  --bg-color-paste-blue: hsl(228, 100%, 84%);
+  --bg-color-light-blue: hsl(206, 94%, 87%);
+  --bg-color-strawberry-red: hsl(206, 94%, 87%);
+  --color-gary: hsl(231, 11%, 63%);
+  --color-light-gary: hsl(229, 24%, 87%);
+  --color-magnolia: hsl(217, 100%, 97%);
+  --color-alabaster: hsl(231, 100%, 99%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-red: hsl(0, 92%, 40%);
+  --very-light-grey: #f8f9ff;
+  --sky-blue: #bee2fd;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.section__form-img-card-circle.click{
-    background-color: aqua;
-    border: none;
-    color: var(--bg-color-marine-blue);
+.section__form-img-card-circle.click {
+  background-color: var(--sky-blue);
+  border: none;
+  color: var(--bg-color-marine-blue);
 }
 
 .section__form-content {
-    width: 100%;
-    padding: 20px;
-    border-radius: 9px;
-    background-color: var(--color-white);
-    display: flex;
-    justify-content: center;
-    gap: 100px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 9px;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
 .section__form-content .section__form-img {
-    width: 28%;
-    border-radius: 9px;
-    height: 568px;
-    background-image: url(/assets/images/bg-sidebar-desktop.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 35px;
+  width: 28%;
+  border-radius: 9px;
+  height: 568px;
+  background-image: url(/assets/images/bg-sidebar-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 35px;
 }
 
 .section__form-img-card {
-    display: flex;
-    gap: 10px;
-    padding: 20px 30px;
-    cursor: pointer;
+  display: flex;
+  gap: 10px;
+  padding: 20px 30px;
+  cursor: pointer;
 }
 
 .section__form-img-card-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    color: var(--color-white);
-    border: 2px solid var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
 }
 
 .section__form-img-card-info p {
-    color: var(--bg-color-light-blue);
-    font-family: Ubuntu;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: var(--bg-color-light-blue);
+  font-family: Ubuntu;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .section__form-img-card-info h6 {
-    color: var(--color-white);
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding-top: 3px;
+  color: var(--color-white);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-top: 3px;
 }
 
 .section__form-content .section__form-info {
-    width: 50%;
+  width: 50%;
 }
 
 .section__form-content .section__form-info h2 {
-    color: var(--bg-color-marine-blue);
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Ubuntu;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: var(--bg-color-marine-blue);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .section__form-content .section__form-info p {
-    color: var(--color-gary);
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 25px;
-    padding: 10px 0;
+  color: var(--color-gary);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  padding: 10px 0;
 }
 
 .section__form-content .section__form-info form label {
-    color: var(--bg-color-marine-blue);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 10px 0;
-    display: block;
+  color: var(--bg-color-marine-blue);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px 0;
+  display: block;
 }
 
-.section__form-content .section__form-info form label p {
-    color: var(--color-red);
-    display: flex;
-    justify-content: end;
-    display: none;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.section__form-content .section__form-info form label .error-message {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-red);
+  text-align: end;
+  line-height: normal;
+  padding: 0;
 }
+/* 
+.section__form-content .section__form-info form label p {
+  color: var(--color-red);
+  display: flex;
+  justify-content: end;
+  display: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} */
 
 .section__form-content .section__form-info form .section__form-btn {
-    height: 160px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
+  height: 160px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
 
-.section__form-content .section__form-info form .section__form-btn a {
-    cursor: copy;
-    margin-top: 20px;
-    border-radius: 8px;
-    color: var(--color-white);
-    background-color: var(--bg-color-marine-blue);
-    padding: 10px;
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+.section__form-content .section__form-info form .section__form-btn button {
+  cursor: copy;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: var(--color-white);
+  background-color: var(--bg-color-marine-blue);
+  padding: 10px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .section__form-content .section__form-info form label input {
-    width: 100%;
-    padding: 17px 15px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    margin: 5px 0;
-    border: 1px solid transparent;
+  width: 100%;
+  padding: 17px 15px;
+  border: 1px solid rgb(140, 140, 140);
+  outline: none;
+  border-radius: 8px;
+  margin: 5px 0;
 }
 
 .section__form-content .section__form-info form label input:focus {
-    border: 1px solid var(--bg-color-marine-blue);
+  border: 1px solid var(--bg-color-purplish-blue);
+  outline: none;
 }
 
-/*! !*/
+/*! Step two !*/
 .section__form-card {
-    display: flex;
+  display: flex;
 }
 
 .section__form-card-item {
-    border: 1px solid var(--bg-color-marine-blue);
-    padding: 10px;
-    margin-right: 20px;
-    border-radius: 9px;
-    width: 140px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    cursor: pointer;
+  border: 1px solid var(--bg-color-marine-blue);
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 9px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  cursor: pointer;
+}
+
+.section__form-card-item.selected {
+  background-color: var(--very-light-grey);
+}
+
+.section__form-card-item:hover {
+  background-color: var(--very-light-grey);
 }
 
 .section__form-info .padding {
-    padding-bottom: 40px !important;
+  padding-bottom: 40px !important;
 }
 
 .section__form-card-item p:first-child {
-    color: var(--Denim, #022959);
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  color: var(--Denim, #022959);
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .section__form-card-item p:last-child {
-    color: var(--Grey, #9699AA);
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+  color: var(--Grey, #9699aa);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .section__form-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F8F9FF;
-    width: 79%;
-    border-radius: 9px;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9ff;
+  width: 79%;
+  border-radius: 9px;
+  margin-top: 20px;
 }
 
 .section__form-icon p:nth-of-type(1) {
-    color: var(--Denim, #022959);
-    text-align: right;
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  color: var(--Denim, #022959);
+  text-align: right;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .section__form-icon p:nth-of-type(2) {
-    margin: 0 10px;
-    display: flex;
+  margin: 0 10px;
+  display: flex;
 }
-
 
 .section__form-info .section__form-btn {
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
-
 .section__form-info .section__form-btn a:first-child {
-    cursor: copy;
-    margin-top: 20px;
-    border-radius: 8px;
-    color: #000;
-    background-color: transparent;
-    padding: 10px;
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  cursor: copy;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: #000;
+  background-color: transparent;
+  padding: 10px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .section__form-info .section__form-btn a {
-    cursor: copy;
-    margin-top: 20px;
-    border-radius: 8px;
-    color: var(--color-white);
-    background-color: var(--bg-color-marine-blue);
-    padding: 10px;
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  cursor: copy;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: var(--color-white);
+  background-color: var(--bg-color-marine-blue);
+  padding: 10px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .section__checkbox {
-    height: 110px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    border: 1px solid var(--bg-color-marine-blue);
-    padding: 10px;
-    border-radius: 9px;
-    margin: 10px 0;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border: 1px solid var(--bg-color-marine-blue);
+  padding: 10px;
+  border-radius: 9px;
+  margin: 10px 0;
 }
 
 .section__checkbox input {
-    height: 20px;
-    width: 20px;
+  height: 20px;
+  width: 20px;
 }
 
 .checkbox-price {
-    width: 250px;
-    display: flex;
-    justify-content: end;
+  width: 250px;
+  display: flex;
+  justify-content: end;
 }
 
 .section__form-info .section__checkbox-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
-
 .section__form-info .section__checkbox-btn a:first-child {
-    cursor: copy;
-    margin-top: 20px;
-    border-radius: 8px;
-    color: #000;
-    background-color: transparent;
-    padding: 10px;
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  cursor: copy;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: #000;
+  background-color: transparent;
+  padding: 10px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .section__form-info .section__checkbox-btn a {
-    cursor: copy;
-    margin-top: 20px;
-    border-radius: 8px;
-    color: var(--color-white);
-    background-color: var(--bg-color-marine-blue);
-    padding: 10px;
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  cursor: copy;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: var(--color-white);
+  background-color: var(--bg-color-marine-blue);
+  padding: 10px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .checkbox-info p:first-child {
-    color: var(--Denim, #022959);
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding: 0;
+  color: var(--Denim, #022959);
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0;
 }
 
-
 .arcade {
-    background-color: #F8F9FF;
-    height: 200px;
+  background-color: #f8f9ff;
+  height: 200px;
 }
 
 .arcade__montly {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left: 40px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 40px;
 }
 
 hr {
-    margin: 0 40px;
+  margin: 0 40px;
 }
 
 .arcade__montly p:first-child {
-    color: var(--Denim, #022959);
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  color: var(--Denim, #022959);
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .arcade__montly p:last-child {
-    color: var(--Denim, #022959);
-    text-align: right;
-    padding-right: 40px;
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
+  color: var(--Denim, #022959);
+  text-align: right;
+  padding-right: 40px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .arcade__montly a {
-    text-decoration: underline;
-    display: block;
-    /* padding-bottom: 10px; */
+  text-decoration: underline;
+  display: block;
+  /* padding-bottom: 10px; */
 }
 
 .service-top,
 .service-bottom {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
 }
 
 .service-top p:first-child,
 .service-bottom p:first-child {
-    color: var(--Grey, #9699AA);
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+  color: var(--Grey, #9699aa);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .service-top p:last-child,
 .service-bottom p:last-child {
-    color: var(--Denim, #022959);
-    text-align: right;
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+  color: var(--Denim, #022959);
+  text-align: right;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .total {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
 }
 
 .total p:first-child {
-    color: var(--Grey, #9699AA);
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+  color: var(--Grey, #9699aa);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .total p:last-child {
-    color: var(--Purple, #483EFF);
-    text-align: right;
-    font-family: Ubuntu;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
+  color: var(--Purple, #483eff);
+  text-align: right;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .section__form-info .section__total-btn {
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
-
 .section__form-info .section__total-btn a:first-child {
-    cursor: copy;
-    margin-top: 20px;
-    border-radius: 8px;
-    color: #000;
-    background-color: transparent;
-    padding: 10px;
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  cursor: copy;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: #000;
+  background-color: transparent;
+  padding: 10px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .section__form-info .section__total-btn a {
-    cursor: copy;
-    margin-top: 20px;
-    border-radius: 8px;
-    color: var(--color-white);
-    background-color: #928CFF;
-    padding: 10px;
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  cursor: copy;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: var(--color-white);
+  background-color: #928cff;
+  padding: 10px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-
 .padding-top {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 .d-none {
-    display: none;
+  display: none;
+}
+
+/* !Toggle checkbox */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-color-marine-blue);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--bg-color-marine-blue);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--bg-color-marine-blue);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* !Selected step 3 */
+
+.section__checkbox.selected {
+  background-color: var(--very-light-grey);
 }
